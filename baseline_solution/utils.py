@@ -11,9 +11,9 @@ import torch
 from torch.utils.data import DataLoader, Dataset
 
 
-PUBLIC_DATA_FOLDER_PATH = '../../../../competition_photo_mid'
+PUBLIC_DATA_FOLDER_PATH = 'public_test'
 PUBLIC_DATA_DESCRIPTION_PATH = 'public_description.csv'
-PRIVATE_DATA_FOLDER_PATH = '../../../../competition_photo_mid_private'
+PRIVATE_DATA_FOLDER_PATH = 'private_test'
 PRIVATE_DATA_DESCRIPTION_PATH = 'private_description.csv'
 
 
@@ -144,7 +144,7 @@ def get_predictions(model, device, val_loader, add_sigmoid=False):
             
     return pd.DataFrame.from_dict({
         'pass_id': pass_ids,
-        'pred': y_pred,
+        'prediction': y_pred,
         'plan_side': plan_sides,
     })
 

@@ -11,7 +11,7 @@ import torch
 from torch.utils.data import DataLoader, Dataset
 
 
-PUBLIC_DATA_FOLDER_PATH = 'public_test'
+PUBLIC_DATA_FOLDER_PATH = '...'
 PUBLIC_DATA_DESCRIPTION_PATH = 'public_description.csv'
 PRIVATE_DATA_FOLDER_PATH = 'private_test'
 PRIVATE_DATA_DESCRIPTION_PATH = 'private_description.csv'
@@ -35,7 +35,7 @@ def show_photos(photos):
     for im in buffer:
         new_im.paste(im, (x_offset, 0))
         x_offset += im.size[0]
-    new_im.show()
+    return new_im
 
     
 def train_epoch(model, device, train_loader, criterion, optimizer):

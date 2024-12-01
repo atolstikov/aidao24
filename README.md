@@ -4,8 +4,6 @@ Yandex GO is one of the top three ride-hailing services in the world. Our app fa
 
 Computer vision algorithms play a significant role in this remote quality control process. Machine learning acts as a filter that processes vehicle inspection requests, automatically approving a portion of requests that contain no violations according to the predictions and sending suspicious cases for additional manual review.
 
-![Image](image.png)
-
 
 ### How does the photo inspection process work?
 As part of vehicle photo inspections, drivers periodically receive a task to take photos of their car so it can be checked for damage, compliance with service standards, branding presence, etc. Before these checks, we also need to ensure that drivers took the photos honestly and sent what we expected. The driver is required to take 4 photos (front, rear, left side, right side). The photos are taken through the Yandex PRO app, which has an interface that guides them to capture the 4 photos in the correct order and from the required angles.
@@ -16,7 +14,7 @@ In this task, the license plate numbers have been blacked out.
 
 ## Data: 
 Competition data is organized as follows:
-- training photos are on the [Yandex Disk](https://disk.yandex.ru/d/EUgS6vJyqYn_uA), [S3 storage](https://plcn.s3.yandex.net/aidao24/competition_photo_mid.tar.gz) and HSE HPC cluster under `/tmp/cs/competition_photo_mid` (fast read operations) and `/opt/software/datasets/cs/competition_photo_mid` (backup just in case).
+- training photos are on the Yandex Disk, S3 storage and HSE HPC cluster under `/tmp/cs/competition_photo_mid` (fast read operations) and `/opt/software/datasets/cs/competition_photo_mid` (backup just in case).
 - training photos descriptions `public_description.csv` is on the [GitHub](https://github.com/atolstikov/aidao24/blob/main/baseline_solution/public_description.csv).
 - Also on GitHub there is [baseline solution](https://github.com/atolstikov/aidao24/tree/main/baseline_solution) for you to start off.
 
